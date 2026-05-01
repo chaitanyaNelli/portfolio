@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nelli Chaitanya | Software Engineer</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<style>
+body {
+    background: #0f172a;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+.gradient-text {
+    background: linear-gradient(90deg,#6366f1,#22d3ee);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.card {
+    background: rgba(255,255,255,0.05);
+    padding:20px;
+    border-radius:15px;
+    transition:0.3s;
+}
+.card:hover {
+    transform: translateY(-5px);
+    border:1px solid #6366f1;
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav style="padding:20px; display:flex; justify-content:space-between;">
+    <h2 class="gradient-text">NC.</h2>
+    <div>
+        <a href="#projects">Projects</a> |
+        <a href="#skills">Skills</a> |
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+
+<!-- HERO -->
+<section style="text-align:center; padding:80px 20px;">
+    <h1 style="font-size:40px;">
+        Nelli <span class="gradient-text">Chaitanya</span>
+    </h1>
+
+    <p style="max-width:600px; margin:auto; color:gray;">
+        Computer Science student with strong problem-solving skills, eager to contribute and grow as a software professional.
+    </p>
+
+    <div style="margin-top:30px; display:flex; justify-content:center; gap:20px;">
+        <div><b>9.1</b><br>CGPA</div>
+        <div><b>DSA</b><br>Core Skill</div>
+        <div><b>AI</b><br>Learning</div>
+        <div><b>Git</b><br>Tools</div>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" style="padding:50px;">
+<h2>Projects</h2>
+
+<div style="display:flex; gap:20px; flex-wrap:wrap;">
+
+<div class="card">
+<h3>Farmers E-Market</h3>
+<p>Developed an e-commerce platform for farmers with secure payments.</p>
+</div>
+
+<div class="card">
+<h3>Netflix Clone</h3>
+<p>Built a streaming app with authentication and categorized content.</p>
+</div>
+
+</div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" style="padding:50px;">
+<h2>Skills</h2>
+
+<p>Java & DSA - 90%</p>
+<p>Python - 85%</p>
+<p>HTML & CSS - 80%</p>
+<p>SQL - 85%</p>
+<p>JavaScript - 75%</p>
+<p>Git - 70%</p>
+
+</section>
+
+<!-- EDUCATION -->
+<section style="padding:50px;">
+<h2>Education</h2>
+
+<p><b>B.Tech (CSE)</b> - Mohan Babu University (2023-2027) | CGPA: 9.1</p>
+<p><b>Intermediate</b> - Narayana Junior College (80%)</p>
+
+</section>
+
+<!-- CERTIFICATIONS -->
+<section style="padding:50px;">
+<h2>Certifications</h2>
+
+<ul>
+<li>Java Programming</li>
+<li>Data Structures</li>
+<li>Python Programming</li>
+<li>Data Analyst</li>
+<li>Artificial Intelligence</li>
+</ul>
+
+</section>
+
+<!-- CONTACT -->
+<section id="contact" style="padding:50px;">
+<h2>Contact Me</h2>
+
+<form id="contactForm">
+<input type="text" placeholder="Name" required><br><br>
+<input type="email" placeholder="Email" required><br><br>
+<textarea placeholder="Message"></textarea><br><br>
+<button type="submit">Send</button>
+</form>
+
+<p id="msg"></p>
+
+</section>
+
+<!-- FOOTER -->
+<footer style="text-align:center; padding:20px;">
+© 2026 NELLI CHAITANYA
+</footer>
+
+<!-- JAVASCRIPT -->
+<script>
+document.getElementById("contactForm").addEventListener("submit", function(e){
+    e.preventDefault();
+    document.getElementById("msg").innerText = "Message sent successfully!";
+});
+</script>
+
+</body>
+</html>
